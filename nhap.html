@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 320px;
+            background-color: #005691;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+        .nav-link {
+            width: 280px;
+            background-color: white;
+            color: #005691;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: auto;
+            padding-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+        .footer img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 720px;
+            height: 48px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 28px;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+        .leading-icon, .trailing-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+        }
+        .leading-icon img, .trailing-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #49454f;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+        }
+        .post-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 16px 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .post-card-header {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+        .post-card-header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+        .post-card-header .username {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .post-card-image {
+            width: 100%;
+            height: 150px;
+            background-image: url('https://placeholder.pics/svg/300x150');
+            background-size: cover;
+            background-position: center;
+        }
+        .post-card-actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 16px;
+            background-color: #f9f9f9;
+        }
+        .post-card-actions button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="https://placeholder.pics/svg/100x100" alt="Logo">
+        </div>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Home Icon">
+            Trang chủ
+        </a>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Heart Icon">
+            Tác phẩm
+        </a>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Forum Icon">
+            Diễn đàn
+        </a>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Chat Icon">
+            Trò chuyện
+        </a>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Book Icon">
+            Về ARTISTRY
+        </a>
+        <a href="#" class="nav-link">
+            <img src="https://placeholder.pics/svg/20x20" alt="Settings Icon">
+            Cài đặt
+        </a>
+        <div class="footer">
+            <img src="https://placeholder.pics/svg/40x40" alt="User Icon">
+            <div>Tên khách hàng<br>Khách hàng</div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <div class="leading-icon">
+                <img src="https://placeholder.pics/svg/24x24" alt="Menu Icon">
+            </div>
+            <div class="content">
+                Tìm kiếm
+            </div>
+            <div class="trailing-icon">
+                <img src="https://placeholder.pics/svg/24x24" alt="Search Icon">
+            </div>
+        </div>
+        <div class="post-card">
+            <div class="post-card-header">
+                <img src="https://placeholder.pics/svg/40x40" alt="User Avatar">
+                <div class="username">Tên người dùng</div>
+            </div>
+            <div class="post-card-image"></div>
+            <div class="post-card-actions">
+              <button>Like</button>
+                <button>Comment</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="post-card">
+            <div class="post-card-header">
+                <img src="https://placeholder.pics/svg/40x40" alt="User Avatar">
+                <div class="username">Tên người dùng</div>
+            </div>
+            <div class="post-card-image"></div>
+            <div class="post-card-actions">
+                <button>Like</button>
+                <button>Comment</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
